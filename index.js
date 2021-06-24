@@ -30,9 +30,9 @@ mongoose
   async function updateRecipe() {
     try {
       const recibe = await Recipe.create({
-        title: " 1000 Recipes",
+        title: " Pantagruel",
         level: "Easy Peasy",
-        ingredients: ["Bread", "Eggs", "milk"],
+        ingredients: ["Bread", "Eggs", "water"],
         cuisine: "the best one",
         dishType: "main_course",
         image: "something",
@@ -49,7 +49,7 @@ mongoose
       });
   
       const update = await Recipe.findOneAndUpdate(
-        { title: "Rigatoni alla Genovese" },
+        { title: "Bacalhau à Braz" },
         { duration: 100 },
         { new: true }
       );
